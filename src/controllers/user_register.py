@@ -2,7 +2,7 @@ from src.models.repositories.interfaces.users_repository import UsersRepositoryI
 
 class UserRegister:
     def __init__(self, users_repository: UsersRepositoryInterface) -> None:
-        self.users_repository = users_repository
+        self.__users_repository = users_repository
     
     
     async def register_user(self, user_data: dict) -> dict:

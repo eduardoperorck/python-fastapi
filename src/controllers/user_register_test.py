@@ -57,7 +57,7 @@ async def test_register_user_error_age():
     invalid_uf_user_data = {
         "user_name": "Maria Silva",
         "age": -32,
-        "uf": "ES"
+        "uf": "MG"
     }
 
     with pytest.raises(Exception) as excinfo:

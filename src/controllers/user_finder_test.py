@@ -26,6 +26,6 @@ async def test_find_user_by_name():
 
     assert response["type"] == "USERS"
     assert response["count"] == 2
-    assert "atributtes" in response
-    assert isinstance(response["atributtes"], list)
-    assert isinstance(response["atributtes"][0], dict)
+    assert "attributes" in response
+    assert isinstance(response["attributes"], list)
+    assert isinstance(response["attributes"][0], dict)
