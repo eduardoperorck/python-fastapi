@@ -14,7 +14,7 @@ async def create_user():
   )
   
 @users_routes.get("/users/{user_name}")
-async def search_users_by_name(user_name: int):
+async def search_users_by_name(user_name: str):
   http_request = HttpRequest(path_params={"user_name": user_name})
   user_finder = user_finder_composer()
   
